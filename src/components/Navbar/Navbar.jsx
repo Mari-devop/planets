@@ -12,6 +12,10 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
+  const handleClick = () => {
+    setIsOpen(false); 
+  };
+
   return (
     <NavbarComponent>
       <div className='logo'>
@@ -26,14 +30,14 @@ const Navbar = () => {
     
       <div className={`navbar-menu ${isOpen ? 'open' : ''}`}>
         <ul>
-          <li><Link to="/card/1">mercury</Link></li>
-          <li><Link to="/card/2">venus</Link></li>
-          <li><Link to="/card/3">earth</Link></li>
-          <li><Link to="/card/4">mars</Link></li>
-          <li><Link to="/card/5">jupiter</Link></li>
-          <li><Link to="/card/6">saturn</Link></li>
-          <li><Link to="/card/7">uranus</Link></li>
-          <li><Link to="/card/8">neptune</Link></li>
+          <li onClick={handleClick}><Link to="/card/1">mercury</Link></li>
+          <li onClick={handleClick}><Link to="/card/2">venus</Link></li>
+          <li onClick={handleClick}><Link to="/card/3">earth</Link></li>
+          <li onClick={handleClick}><Link to="/card/4">mars</Link></li>
+          <li onClick={handleClick}><Link to="/card/5">jupiter</Link></li>
+          <li onClick={handleClick}><Link to="/card/6">saturn</Link></li>
+          <li onClick={handleClick}><Link to="/card/7">uranus</Link></li>
+          <li onClick={handleClick}><Link to="/card/8">neptune</Link></li>
         </ul>
       </div>
     </NavbarComponent>

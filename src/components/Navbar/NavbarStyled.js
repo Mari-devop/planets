@@ -57,11 +57,11 @@ export const NavbarComponent = styled.div`
     .open {
       display: flex;
       flex-direction: column;
-      align-items: flex-start;
+      align-items: center;
       position: absolute;
       top: 80px;
       left: 0px;
-      width: 20%;
+      width: 50%;
       height: calc(100vh - 60px);
       background: #070724;
       z-index: 10;
